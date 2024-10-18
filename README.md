@@ -1,2 +1,0 @@
-# undangan_Carissa_minangkabau
-# undangan_CarissaAurel_minangkabau
