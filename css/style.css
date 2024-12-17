@@ -1,0 +1,567 @@
+/* Global Styles */
+* {
+  font-family: "EB Garamond", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h2,
+h4 {
+  font-family: "Playfair Display", serif;
+  margin: 20px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 10px;
+}
+
+/* Layout Styles */
+.box-full {
+  background-image: url(../image/6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Section-specific Styles */
+.bg-third {
+  background-color: #f4e4d7;
+}
+
+.bg-secondary {
+  background-color: #c3a59b;
+}
+
+.bg-dark {
+  background-color: #2c2c2c;
+}
+
+.bg-light {
+  background-color: #fafafa;
+}
+
+.c-txt-maroon{
+  color: rgb(88, 23, 23);
+}
+.c-txt-primary {
+  color: #ffffff;
+}
+
+.c-txt-secondary {
+  color: #333333;
+}
+
+.img-kecil {
+  height: 25px;
+}
+
+#quote {
+  color: #000000;
+  background-color: #ffffff69;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* Tanggal Acara & Lokasi */
+.event-info p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #c3a59b;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.map-link:hover {
+  background-color: #a0847a;
+}
+
+/* Navbar */
+#nav {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(88, 23, 23);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#nav ul {
+  display: flex;
+}
+
+#nav li {
+  margin: 0 5px;
+}
+
+#nav a {
+  color: #fff;
+  font-size: 20px;
+}
+
+#nav li i {
+  padding: 1px;
+  color: #fff;
+}
+
+/* Audio Mute Button */
+#mute-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Section Style*/
+#section-1 {
+  background-image: url(../image/latar.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay to improve text readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Black overlay with transparency */
+  z-index: 1;
+}
+
+/* Content area */
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Text styling */
+h2 {
+  font-size: 2rem;
+  color: #fff; /* White color for text */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Shadow for better readability */
+  margin-bottom: 1rem;
+  animation: fadeInUp 2s ease-out;
+}
+
+/* Wedding photo styling */
+.wedding-photo {
+  margin-top: 1rem;
+  max-width: 80%;
+  height: auto;
+  border-radius: 50px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for photo */
+}
+
+/* Keyframes for animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#section-2 {
+  background-image: url(../image/14.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sosmed{
+  font-size: medium;
+  color: rgb(216, 187, 25);
+
+}
+.nama{
+  font-size: x-large;
+}
+.orangtua{
+  color: rgb(216, 187, 25);
+}
+
+#section-3 {
+  background-image: url(../image/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(88, 23, 23);
+    border-radius: 150px;
+    margin: 5px;
+    padding: 20px;
+  }
+
+  .profile-img {
+    max-width: 235px; 
+    height: auto; 
+    border-radius: 150px 150px 0px 0px;
+  }
+  .profile-img2 {
+    max-width: 235px; 
+    height: auto; 
+    border-radius: 0px 0px 150px 150px;
+  }
+}
+
+#section-4 {
+  background-image: url(../image/6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#section-5 {
+  background-image: url(../image/1jpg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .gallery-item {
+    max-width: 100%;
+  }
+
+  .gallery-item img {
+    width: 8rem;
+    border-radius: 20px;
+  }
+
+  .gallery-item iframe {
+    width: 100%;
+  }
+}
+.j-gallery{
+  color: rgb(88, 23, 23);
+
+}
+
+
+#section-6 {
+  background-image: url(../image/13.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  /* Tamu Khusus Table */
+  .special-guests {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+
+  .special-guests th,
+  .special-guests td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .special-guests th {
+    background-color: rgb(88, 23, 23);
+  }
+
+  .special-guests td {
+    background-color: rgb(112, 16, 16);
+  }
+}
+
+#section-7 {
+  background-image: url(../image/test.jpeg);
+  color: #ccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  /* Form Styles */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  form label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  form input,
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #c3a59b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background-color: #a0847a;
+  }
+}
+
+#section-8 {
+  background-image: url(../image/test.jpeg);
+  color: #ccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  /* Gallery Adjustments */
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-item {
+    max-width: 100%; /* Menyesuaikan lebar item galeri dengan layar */
+  }
+
+  .gallery-item img {
+    height: 50vh;
+    width: 50%;
+    border-radius: 10px;
+  }
+
+  .gallery-item iframe {
+    width: 100%;
+  }
+}
+
+#section-9 {
+  background-image: url(../image/foto5.jpeg);
+  color: #ccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  #border-15 {
+    background-color: #2c2c2c;
+    width: 100% ;
+    height: 50vh;
+    color: white;
+    padding: 1rem;
+  }
+}
+
+#section-10 {
+  background-image: url(../image/4.jpg);
+  color: #ccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  /* Form Styles */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  form label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  form input,
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #c3a59b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background-color: #a0847a;
+  }
+}
+
+#section-11 {
+  background-image: url(../image/4.jpg);
+  color: #ccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-kecil {
+  width: 100px;
+  height: 100px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 15px; /* Mengurangi padding untuk layar lebih kecil */
+  }
+
+  .profile-img {
+    max-width: 120px; /* Mengurangi ukuran gambar pada layar lebih kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 10px; /* Mengurangi padding lebih lanjut untuk layar sangat kecil */
+  }
+
+  .profile-img {
+    max-width: 100px; /* Ukuran gambar lebih kecil pada layar sangat kecil */
+  }
+}
