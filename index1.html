@@ -32,8 +32,8 @@
         <h2 class="c-txt-maroon">Reval & Shirin</h2>
         <img src="image/foto1.jpeg" alt="Photo" class="wedding-photo" />
       </div>
+      <button id="play"><a href="#section-2"><img src="image/12.png" id="play-img"></a></button>
     </div>
-
     <!-- Section 2 -->
 
     <div id="section-2" class="box-full bg-secondary c-txt-primary">
@@ -381,14 +381,14 @@
           ><li><i class="fas fa-gift"></i></li
         ></a>
         <li id="audio-controls">
-          <audio id="audio-player" autoplay>
-            <source
-              src="audio/backsound.mp3"
-              type="audio/mp3"
-            />
+          <!-- <audio id="audio-player" autoplay>
+            <source src="audio/backsound.mp3" type="audio/mp3">
             Your browser does not support the audio element.
+          </audio> -->
+          <audio autoplay id="audio">
+            <source src="audio/backsound.mp3" type="audio/mpeg">
           </audio>
-          <button id="mute-button" aria-label="Mute">
+          <button onclick="" id="mute-button" aria-label="mute">
             <i class="fas fa-volume-up"></i>
           </button>
         </li>

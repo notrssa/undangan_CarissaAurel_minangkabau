@@ -153,6 +153,16 @@ li {
   overflow: hidden;
 }
 
+#play{
+  margin-right: 25px;
+  margin-top: 450px;
+  mix-blend-mode: multiply;
+}
+#play-img{
+  width: 50px;
+  height: 50px;
+}
+
 /* Overlay to improve text readability */
 .overlay {
   position: absolute;
@@ -564,4 +574,9 @@ h2 {
   .profile-img {
     max-width: 100px; /* Ukuran gambar lebih kecil pada layar sangat kecil */
   }
+}
+
+#play {
+  z-index: 5;
+  position: absolute;
 }
